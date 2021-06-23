@@ -1,0 +1,306 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+/* navbar */
+.logo{
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 2px 10px;
+}
+.tagline{
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.5); 
+}
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    font-family: "Poppins" , sans-serif;
+}
+.navbar ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin: 20px 0px;
+    
+}
+.navbar ul li{
+    font-family: century;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 8px 25px;
+    transition: all .5s ease;
+}
+.navbar ul li a:hover{
+    background-color: white;
+    color: black;
+}
+
+/* home */
+#home{
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+    height: 640px;
+    color: darkred;
+    font-size: 25px;
+    font-style: italic;
+   align-items: center;
+   padding-top: 250px;
+  
+}
+.main h1:hover{
+    background-color: blue;
+    color: yellow;
+    transition:all .5s ease;
+}
+#home::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: url("https://www.pxwall.com/wp-content/uploads/2019/03/Tropical-Beach-Landscape-Free-Wallpaper.jpg") no-repeat center center/cover;
+    height: 700px;
+    width: 100%;
+    z-index: -1;
+    opacity: .8;
+
+}
+/* About me */
+#about{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 20px;
+    margin-bottom: 50px;
+    font-family: "Poppins" , sans-serif;
+}
+#pic{
+   display: flex;
+}
+#pic img{
+    width: 575px;
+    height: 400px;
+}
+#about h1{
+    font-size: 40px;
+    margin-left: 600px;
+    font-style: italic;
+}
+#intro{
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    padding: 10px;
+}
+#intro p{
+    font-size: 18px;
+    margin-right: 20px;
+}
+#intro h2{
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/*  education gallery */
+
+#education h1{
+    font-size: 40px;
+    font-style: italic;
+}
+#education h2{
+    color: yellow;
+    font-size: 30px;
+    font-style: italic;
+}
+
+#education{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(0, 0, 0,0.9);
+    color: white;
+    align-items: center;
+    padding: 20px;
+
+}
+.gallery1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    box-sizing: border-box;
+}
+.gallery1 img{
+    width: 460px;
+    height: 240px;
+    margin: 30px;
+}
+.gallery2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    box-sizing: border-box;
+}
+.gallery2 img{
+    width: 460px;
+    height: 240px;
+    margin: 30px;
+}
+
+/*  experience */
+
+#experience h1{
+    font-size: 40px;
+    margin-left: 600px;
+    font-style: italic;
+}
+
+#experience{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+.skills{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+
+
+}
+.box h2{
+    font-size: 30px;
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    width: 320px;
+    height: 450px;
+    border: 1px solid black;
+    margin: 20px;
+    align-items: center;
+    text-align: justify;
+    padding: 10px;
+    border-radius: 15px;
+    background: linear-gradient(to top, rgb(255, 45, 45) 50%, white 50%);
+    background-size: 100% 200%;
+    transition: all .8s;
+}
+.box:hover{
+    background-position: left bottom;
+    color:white;
+    border: none;
+    box-shadow: 0 0 20px rgb(255, 45, 45);
+}
+.list{
+    font-size: 20px;
+    
+}
+.skillpics{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px 30px;
+    justify-content: space-around;
+}
+.box p{
+    font-size: 20px;
+}
+
+/* contact section */
+
+
+#contact h1{
+    font-size: 40px;
+    margin-left: 600px;
+    font-style: italic;
+}
+#contact{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+    padding: 20px;
+    font-family: "Poppins" , sans-serif;
+}
+.container{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-top: 30px;
+}
+.contactinfo{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+.contactinfo .block{
+    position: relative;
+    padding: 20px 20px;
+    display: flex;
+}
+.contactinfo .block .icon{
+    min-width: 60px;
+    height: 60px;
+    background: rgb(0, 255, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+}
+.text{
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    flex-direction: column;
+    font-weight: 300;
+}
+h3{
+    font-weight: 500;
+    color: #00bcd4;
+}
+.form{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+.input{
+    padding: 12px;
+    margin: 15px;
+    width: 30%;
+    border: none;
+    outline: none;
+}
+#msg{
+    width: 20%;
+    padding: 10px;
+    border: none;
+    outline: none;
+}
+#send{
+    padding: 10px;
+    width: 10%;
+    margin: 40px;
+    border: none;
+    outline: none;
+}
+#send:hover{
+    cursor: pointer;
+    box-shadow: 0 0 10px white;
+}
+
